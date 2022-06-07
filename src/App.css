@@ -24,16 +24,11 @@ font-size: 3rem;
 margin: 0 auto;
 }
 
-.temp{
-text-align: start;
-font-size: 1.5rem;
-display:inline-block;
-}
 
 .wind{
-  text-align: end;
+  text-align: center;
   font-size: 1.5rem;
-  display: inline-block;
+
 }
 
 .actualTemp{

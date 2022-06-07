@@ -47,19 +47,15 @@ const changeTemperature = () => setgrades(!grades)
   return (
     <div className="App">
       <div className='conteiner'>
+        <h1>Weather App</h1>
           <h2>{`${weather?.name}, `}{`${weather?.sys.country}`}</h2>
           <img src={weather && `http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@4x.png`} alt="" />
           <h3 className='titleTemp'>{`${weather?.weather[0].main}`}</h3>
           <h3 className='actualTemp'>{grades ? `${celsiusGrade}°` : `${fahrenheitGrade}°`}</h3>
-          <ul className='temp'> 
-            <li><b>Temperatura Maxima: </b>{`${weather?.main.temp_max}°`}</li>
-            <li><b>Temperatura Minima: </b>{`${weather?.main.temp_min}°`}</li>
-            <li><b>Sensacion Termica: </b>{`${weather?.main.feels_like}°`}</li>
-          </ul>
           <ul className='wind'>
-            <li><b>Rafagas de viento: </b>{`${weather?.wind.gust}M/S`}</li>
-            <li><b>Velocidad: </b>{`${weather?.wind.speed}M/S`}</li>
-            <li><b>Humedad: </b>{`${weather?.main.humidity}%`}</li>
+            <li><b>Wind gust: </b>{`${weather?.wind.gust}M/S`}</li>
+            <li><b>Wind Speed: </b>{`${weather?.wind.speed}M/S`}</li>
+            <li><b>Humidity: </b>{`${weather?.main.humidity}%`}</li>
           </ul>
           <button onClick={changeTemperature}>Change</button>
         </div>
