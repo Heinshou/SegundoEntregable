@@ -57,7 +57,7 @@ const changeTemperature = () => setgrades(!grades)
             <li><b>Wind Speed: </b>{`${weather?.wind.speed}M/S`}</li>
             <li><b>Humidity: </b>{`${weather?.main.humidity}%`}</li>
           </ul>
-          <button onClick={changeTemperature}>Change</button>
+          <button className='bataoun' onClick={changeTemperature}>Change</button>
         </div>
     </div>
   )
